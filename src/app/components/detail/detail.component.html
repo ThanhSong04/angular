@@ -1,0 +1,50 @@
+<div class="wrapper_detail">
+  <div class="pages-title section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pages-title-text text-center">
+            <h2>Chi tiết sản phẩm</h2>
+            <ul class="text-left">
+              <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Trang Chủ </a></li>
+              <li><span> // </span>Chi tiết sản phẩm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pages section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6" >
+            <div class="wrapper_detail_img">
+              <div class="detail_img">
+                <img src={{sanpham.hinhAnh}} alt="">
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-6" >
+          <div class="product-dsc">
+            <div class="detail_content_wrapper">
+              <div class="detail_content">
+                <h3><a class="detail_name">{{sanpham.tenSP}}</a></h3>
+                <p>Giá:<a class="price_initial" > {{sanpham.gia}}</a></p>
+                <p>Giá:<a class="detail_price" >{{sanpham.sale}}</a></p>
+                <p class="detail_description">{{sanpham.mota}}</p>
+                <div class="detail_btn">
+                    <button [routerLink]="['/cart']" class="btn btn-danger">Thêm vào giỏ hàng</button>
+                    <button [routerLink]="['/checkout']"class="btn btn-danger">Mua ngay</button>
+                </div>
+                <div class="detail_bank">
+                  <a href="#"><img src="\assets\img\nganhang.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

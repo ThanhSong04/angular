@@ -1,0 +1,128 @@
+<div class="pages-title section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pages-title-text text-center">
+          <h2>Giỏ hàng</h2>
+          <ul class="text-left">
+            <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Trang Chủ </a></li>
+            <li><span> // </span>Giỏ hàng</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="pages cart-page section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="table-responsive padding60">
+          <table class="wishlist-table text-center">
+            <thead>
+              <tr>
+                <th>SẢN PHẨM</th>
+                <th>Giá bán</th>
+                <th>Số Lượng</th>
+                <th>Tổng</th>
+                <th>Xóa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-img text-left">
+                  <a href="#"><img src="https://cf.shopee.vn/file/7d52589aee0ea0075c0d723e49cacf6e" alt="Add Product" /></a>
+                  <div class="items-dsc">
+                    <h5><a href="#">10M Giấy dán tường giả vải vân như thật keo sẵn khổ 60cm</a></h5>
+                  </div>
+                </td>
+                <td>155.000₫</td>
+                <td>
+                  <form action="#" method="POST">
+                    <div class="plus-minus">
+                      <a class="dec qtybutton">-</a>
+                      <input type="text" value="01" >
+                      <a class="inc qtybutton">+</a>
+                    </div>
+                  </form>
+                </td>
+                <td>
+                  <strong>155.000₫</strong>
+                </td>
+                <td><i class="mdi mdi-close" title="Remove this product"></i></td>
+              </tr>
+              <tr>
+                <td class="td-img text-left">
+                  <a href="#"><img src="https://www.pnj.com.vn/images/thumbnails/300/300/detailed/38/gndrya87329.000-gndrya87330.000-nhan-cuoi-pnj-sanh-duyen-vang-18k.png" alt="Add Product" /></a>
+                  <div class="items-dsc">
+                    <h5><a href="#">COMPO 10M giấy dán tường màu vân sần keo sẵn khổ 60cm</a></h5>
+                  </div>
+                </td>
+                <td>125.000₫</td>
+                <td>
+                  <form action="#" method="POST">
+                    <div class="plus-minus">
+                      <a class="dec qtybutton">-</a>
+                      <input type="text" value="02">
+                      <a class="inc qtybutton">+</a>
+                    </div>
+                  </form>
+                </td>
+                <td>
+                  <strong>250.000₫</strong>
+                </td>
+                <td><i class="mdi mdi-close" title="Remove this product"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-top">
+      <div class="col-sm-6">
+        <div class="single-cart-form padding60">
+          <div class="log-title">
+            <h3><strong>Mã Giảm Giá</strong></h3>
+          </div>
+          <div class="cart-form-text custom-input">
+            <p>Nhập mã giảm giá của bạn</p>
+            <form action="mail.php" method="post">
+              <input type="text" name="subject" placeholder="Nhập mã giảm giá của bạn ở đây..." />
+              <div class="submit-text coupon">
+                <button style=" margin-left: 160px;" [routerLink]="['/checkout']" >Thanh Toán  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-cart-form padding60">
+          <div class="log-title">
+            <h3><strong>Chi Tiết Thanh Toán </strong></h3>
+          </div>
+          <div class="cart-form-text pay-details table-responsive">
+            <table>
+              <tbody>
+                <tr>
+                  <th>Tổng Tiền</th>
+                  <td>405.000₫</td>
+                </tr>
+                <tr>
+                  <th>Phí Vận Chuyển</th>
+                  <td>30.000đ</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th class="tfoot-padd">Tổng Đơn Hàng</th>
+                  <td class="tfoot-padd">435.000đ</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

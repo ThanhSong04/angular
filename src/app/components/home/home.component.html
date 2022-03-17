@@ -1,0 +1,74 @@
+<div class="pages-title section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pages-title-text text-center">
+          <h2>Trang Chủ</h2>
+          <ul class="text-left">
+            <li><a href="index.html">Trang Chủ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-products single-products section-padding extra-padding-top">
+  <div class="container">
+    <div class="text-center tab-content">
+      <div class="tab-pane  fade in active" id="arrival">
+        <div class="wrapper">
+          <ul class="load-list load-list-two">
+            <li>
+              <div class="row text-center">
+                <div class="col-xs-12 col-sm-6 col-md-3" *ngFor = "let item of datas | paginate:  {itemsPerPage:12, currentPage:p};">
+                  <div class="single-product">
+                    <div class="product-img">
+                      <a [routerLink]="['/detail',item.maSP]" routerLinkActive="router-link-active" >
+                        <img  src="{{item.hinhAnh}}" alt="Product Title" />
+                      </a>
+                    </div>
+                    <div class="product-dsc">
+                      <p class="product_title"><a href="#">{{item.tenSP}}</a></p>
+                      <div class="price">
+                        <span class="price_final">{{item.sale}}</span>
+                        <span class="price_initial">{{item.gia}}</span>
+                      </div>
+                    </div>
+                    <div class="home-product-item__action">
+                      <span class="home-product-item__like home-product-item__like--liked">
+                          <i class="home-product-item__like-empty far fa-heart"></i>
+                          <i class="far fa-heart"></i>
+                      </span>
+                      <div class="home-product-item__rating">
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="home-product-item__star--gold fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                      <span class="home-product-item__sold">Đã bán {{item.daban}}</span>
+                    </div>
+                    <div class="home-product-item__origin">
+                      <span class="home-product-item__origin-name">{{item.city}}</span>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+          <div class="load_more_wrapper">
+            <pagination-controls
+                  (pageChange)="p = $event"
+                  previousLabel="Trước"
+                  nextLabel="Sau"
+                  class="load_more"
+                  >
+            </pagination-controls>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

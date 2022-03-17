@@ -1,0 +1,165 @@
+<div class="pages-title section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="pages-title-text text-center">
+          <h2>Thanh Toán </h2>
+          <ul class="text-left">
+            <li><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Trang Chủ </a></li>
+            <li><span> // </span>Thanh Toán </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="pages checkout section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="main-input single-cart-form padding60">
+          <div class="log-title">
+            <h3><strong>Chi Tiết Hóa Đơn</strong></h3>
+          </div>
+          <div class="custom-input">
+            <form action="mail.php" method="post">
+              <input type="text" name="subject" placeholder="Họ Tên" />
+              <input type="text" name="subject" placeholder="Số Điện Thoại" />
+              <div class="custom-select">
+                <select class="form-control">
+                  <option> Tỉnh / Thành Phố</option>
+                  <option> TP.Hồ Chí Minh </option>
+                  <option> An Giang </option>
+                  <option> Bạc Liêu </option>
+                  <option> Bắc Giang </option>
+                  <option> Bến Tre </option>
+                  <option> Bình Dương </option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select class="form-control">
+                  <option>Quận/Huyện</option>
+                  <option> Quận 1</option>
+                  <option> Bắc Từ Liêm </option>
+                  <option> Gò Vấp </option>
+                  <option> Ô Môn </option>
+                  <option> Tân Bình </option>
+                  <option> Thủ Đức </option>
+                </select>
+              </div>
+
+              <div class="custom-mess">
+                <textarea rows="2" placeholder="Địa Chỉ Cụ Thể ..." name="message"></textarea>
+                <textarea rows="2" placeholder="Ghi Chú ..." name="message"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="main-input single-cart-form padding60">
+          <div class="log-title">
+            <h3><strong>Giao Hàng Đến Địa Chỉ Khác</strong></h3>
+          </div>
+          <div class="custom-input">
+            <form action="mail.php" method="post">
+              <input type="text" name="subject" placeholder="Họ Tên" />
+              <input type="text" name="subject" placeholder="Số Điện Thoại" />
+              <div class="custom-select">
+                <select class="form-control">
+                  <option> Tỉnh / Thành Phố</option>
+                  <option> TP.Hồ Chí Minh </option>
+                  <option> An Giang </option>
+                  <option> Bạc Liêu </option>
+                  <option> Bắc Giang </option>
+                  <option> Bến Tre </option>
+                  <option> Bình Dương </option>
+                </select>
+              </div>
+              <div class="custom-select">
+                <select class="form-control">
+                  <option>Quận/Huyện</option>
+                  <option> Quận 1</option>
+                  <option> Bắc Từ Liêm </option>
+                  <option> Gò Vấp </option>
+                  <option> Ô Môn </option>
+                  <option> Tân Bình </option>
+                  <option> Thủ Đức </option>
+                </select>
+              </div>
+
+              <div class="custom-mess">
+                <textarea rows="2" placeholder="Địa Chỉ Cụ Thể ..." name="message"></textarea>
+                <textarea rows="2" placeholder="Ghi Chú ..." name="message"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row margin-top">
+      <div class="col-xs-12 col-sm-6">
+        <div class="padding60">
+          <div class="log-title">
+            <h3><strong>Hóa Đơn</strong></h3>
+          </div>
+          <div class="cart-form-text pay-details table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sản Phẩm</th>
+                  <td>Tổng Tiền  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Lắc tay cưới Vàng 24K PNJ 0000Y001505 </th>
+                  <td>18.294.000đ</td>
+                </tr>
+                <tr>
+                  <th>Nhẫn Cưới PNJ Sánh Duyên Vàng 18k</th>
+                  <td>10.235.000đ</td>
+                </tr>
+                <tr>
+                  <th>Bông tai Vàng 10K đính đá ECZ PNJ XMXMY002453</th>
+                  <td>3.943.000đ</td>
+                </tr>
+                <tr>
+                  <th>Phí Vận Chuyển</th>
+                  <td>30.000đ</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>Tổng Đơn Hàng</th>
+                  <td>63.283.000đ</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="padding60">
+          <div class="log-title">
+            <h3><strong>Phương Thức Thanh Toán </strong></h3>
+          </div>
+          <div class="categories">
+            <ul id="accordion" class="panel-group clearfix">
+
+										<input type="checkbox" /> Thanh Toán Tiền Mặt Khi Nhận Hàng <p >
+										<input type="checkbox" /> Thanh toán bằng thẻ quốc tế Visa, Master, JCB <p >
+										<input type="checkbox" /> Thẻ ATM nội địa/Internet Banking (Miễn phí thanh toán) <p >
+
+            </ul>
+            <div class="submit-text">
+              <a href="#">Đặt Hàng</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

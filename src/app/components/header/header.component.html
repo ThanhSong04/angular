@@ -1,0 +1,76 @@
+<header style="" class="header-one">
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="header-middel">
+          <div class="middel-top clearfix">
+            <div class="left floatleft">
+              <p><i class="mdi mdi-clock"></i>Thứ Hai-Thứ bẩy</p>
+            </div>
+            <div class="center floatleft">
+              <form action="#" method="get">
+                <button type="submit"><i class="mdi mdi-magnify"></i></button>
+                <input type="text" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ... " />
+              </form>
+            </div>
+            <div class="right floatleft">
+              <ul class="clearfix">
+                <li>
+                  <a href="#" ><i class="mdi mdi-account"></i></a>
+                  <ul>
+                    <li><a [routerLink]="['/login']" routerLinkActive="router-link-active" >Đăng Nhập</a></li>
+                    <li><a [routerLink]="['/login']" routerLinkActive="router-link-active">Đăng Ký</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mainmenu">
+            <ul>
+              <li><a [routerLink]="['/home']" routerLinkActive="router-link-active">Trang Chủ</a></li>
+              <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li>
+              <li><a [routerLink]="['/introduce']" routerLinkActive="router-link-active">Giới Thiệu</a></li>
+              <li><a [routerLink]="['/news']" routerLinkActive="router-link-active">Tin Tức</a></li>
+              <li><a [routerLink]="['/promotion']" routerLinkActive="router-link-active">Khuyến Mãi</a></li>
+              <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Liên Hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="cart-itmes">
+          <a class="cart-itme-a" [routerLink]="['/cart']" routerLinkActive="router-link-active" >
+            <i class="mdi mdi-cart"></i>
+            <strong>280.000đ</strong>
+          </a>
+          <div class="cartdrop">
+            <div class="sin-itme clearfix">
+              <i class="mdi mdi-close"></i>
+              <a class="cart-img" href="cart.html"><img src="https://cf.shopee.vn/file/7d52589aee0ea0075c0d723e49cacf6e" alt="" /></a>
+              <div class="menu-cart-text">
+                <a href="#"><h5>10M Giấy dán tường giả vải vân như thật keo sẵn khổ 60cm</h5></a>
+                <strong>155.000₫</strong>
+              </div>
+            </div>
+            <div class="sin-itme clearfix">
+              <i class="mdi mdi-close"></i>
+              <a class="cart-img" href="cart.html"><img src="https://cf.shopee.vn/file/169139353b81a0949ddbc28f7e1fb816" alt="" /></a>
+              <div class="menu-cart-text">
+                <a href="#"><h5>COMPO 10M giấy dán tường màu vân sần keo sẵn khổ 60cm</h5></a>
+
+                <strong>125.000₫</strong>
+              </div>
+            </div>
+            <div class="total">
+              <span>Tổng : <strong>=280.000đ</strong></span>
+            </div>
+            <a class="goto" [routerLink]="['/cart']" routerLinkActive="router-link-active" >Đi tới giỏ hàng</a>
+            <a class="out-menu" [routerLink]="['/checkout']" routerLinkActive="router-link-active" >Thanh toán </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
